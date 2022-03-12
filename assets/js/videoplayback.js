@@ -7,6 +7,7 @@ $('.videoplay').on('click', function () {
     $(vid)[0].src += "&autoplay=1";
 });
 
+
 $('.videostop').on('click', function () {
     var vid = $(this).attr('videoid');
     var videoURL = $(vid).prop('src');
@@ -14,3 +15,4 @@ $('.videostop').on('click', function () {
     $(vid).prop('src','');
     $(vid).prop('src',videoURL);
 });
+
